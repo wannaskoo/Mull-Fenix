@@ -56,8 +56,8 @@ PYENV_ROOT=$(realpath "$pyenv")
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT
 eval "$(pyenv init --path)"
-pyenv install 3.9.13
-pyenv global 3.9.13
+pyenv install 3.9.2
+pyenv global 3.9.2
 
 # Build WASI SDK
 pushd "$wasi"
