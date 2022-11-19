@@ -73,6 +73,7 @@ make \
 popd
 
 pushd "$mozilla_release"
+export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
 ./mach --verbose build
 gradle publishWithGeckoBinariesReleasePublicationToMavenLocal
 gradle exoplayer2:publishReleasePublicationToMavenLocal
